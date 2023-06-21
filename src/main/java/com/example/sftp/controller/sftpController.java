@@ -22,6 +22,7 @@ public class sftpController {
     private String localFile = "C:/Temp/temp.txt";
     private String remoteDir = "/ToTU/AWS/";
     private String remoteName = "temp2.txt";
+    private int port = 22;
 
     @GetMapping("/subirArchivo")
     public String getSubirArchivo() throws IOException, URISyntaxException{
@@ -33,7 +34,7 @@ public class sftpController {
         String userInfo = username + ":" + password;
         String remoteFile = remoteDir + remoteName;
 
-        URI uri = new URI("sftp", userInfo, remoteHost, 22, remoteFile, null, null);
+        URI uri = new URI("sftp", userInfo, remoteHost, port, remoteFile, null, null);
 
         FileObject remote = manager.resolveFile(uri);
     
