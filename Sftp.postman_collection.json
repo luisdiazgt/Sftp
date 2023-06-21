@@ -1,0 +1,17 @@
+{
+	"info": {
+		"_postman_id": "6e1ec4c0-1289-4155-b787-85a7952fc6c1",
+		"name": "Sftp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "subirArchivo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
