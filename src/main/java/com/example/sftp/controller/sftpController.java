@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/")
-public class sftpController {
+public class SftpController {
 
     private String remoteHost = "dev.sftp.com";
     private String username = "user";
